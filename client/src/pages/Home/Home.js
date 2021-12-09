@@ -44,9 +44,13 @@ export default function Home() {
       <Header />
 
       <main>
-        <Profile user={user} setUser={setUser} />
-        <Password user={user} setUser={setUser} />
-        <DeleteProfile user={user} setUser={setUser} history={history} />
+        <div>
+          <Profile user={user} setUser={setUser} />
+        </div>
+        <div>
+          <Password user={user} setUser={setUser} />
+          <DeleteProfile user={user} setUser={setUser} history={history} />
+        </div>
       </main>
     </div>
   );

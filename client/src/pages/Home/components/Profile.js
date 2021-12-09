@@ -82,7 +82,11 @@ export default function Profile({ user, setUser }) {
           <h2>Profile</h2>
         </div>
         <div className="right">
-          <button to="" className="button" onClick={() => setShowForm(true)}>
+          <button
+            to=""
+            className="button primary"
+            onClick={() => setShowForm(true)}
+          >
             Edit
           </button>
         </div>
@@ -92,7 +96,7 @@ export default function Profile({ user, setUser }) {
           <p>Name</p>
         </div>
         <div className="right">
-          <p>{user.name ? user.name : "No name set"}</p>
+          <p>{user.name ? user.name : "................."}</p>
         </div>
       </div>
       <div className="row">
@@ -100,7 +104,7 @@ export default function Profile({ user, setUser }) {
           <p>Bio</p>
         </div>
         <div className="right">
-          <p>{user.bio ? user.bio : "No bio set"}</p>
+          <p>{user.bio ? user.bio : "................."}</p>
         </div>
       </div>
       <div className="row">
@@ -108,7 +112,7 @@ export default function Profile({ user, setUser }) {
           <p>Phone</p>
         </div>
         <div className="right">
-          <p>{user.phone ? user.phone : "No phone set"}</p>
+          <p>{user.phone ? user.phone : "................."}</p>
         </div>
       </div>
     </div>
